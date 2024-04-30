@@ -60,6 +60,7 @@ namespace BazoWebbApp.Controllers
             {
                 _context.Add(category);
                 await _context.SaveChangesAsync();
+                TempData["Success"] = "Category has been added successfully!";
                 return RedirectToAction(nameof(Index));
             }
             return View(category);
@@ -99,6 +100,7 @@ namespace BazoWebbApp.Controllers
                 {
                     _context.Update(category);
                     await _context.SaveChangesAsync();
+                    TempData["Success"] = "Category has been updated successfully!";
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -146,6 +148,8 @@ namespace BazoWebbApp.Controllers
             }
 
             await _context.SaveChangesAsync();
+            TempData["Success"] = "Category has been deleted successfully!";
+            // add error message if category is deleted
             return RedirectToAction(nameof(Index));
         }
 

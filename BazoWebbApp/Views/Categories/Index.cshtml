@@ -1,13 +1,14 @@
 ﻿@model IEnumerable<BazoWebbApp.Models.Category>
 
+
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Category list</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-primary" asp-action="Create"><i class="bi bi-plus-circle"></i> Create New</a>
 </p>
 <table class="table table-bordered table-striped">
     <thead>
@@ -31,9 +32,9 @@
                 @Html.DisplayFor(modelItem => item.DisplayOrder)
             </td>
             <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pen"></i> Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-eye"></i> Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash3"></i> Delete</a>
+                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pen"></i> Edit</a> |
+                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-eye"></i> Details</a> |
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash3"></i> Delete</a>
             </td>
         </tr>
 }
