@@ -10,8 +10,8 @@
 <p>
     <a class="btn btn-primary" asp-action="Create"><i class="bi bi-plus-circle"></i> Create New</a>
 </p>
-<table class="table table-bordered table-striped">
-    <thead>
+<table class="table table-bordered table-striped text-center table-responsive">
+    <thead class="table-dark">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
@@ -19,7 +19,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.DisplayOrder)
             </th>
-            <th></th>
+            <th>
+                Modify
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -32,9 +34,9 @@
                 @Html.DisplayFor(modelItem => item.DisplayOrder)
             </td>
             <td>
-                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pen"></i> Edit</a> |
-                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-eye"></i> Details</a> |
-                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash3"></i> Delete</a>
+                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pen"></i> Edit</a> |
+                    <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-eye"></i> Details</a> |
+                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash3"></i> Delete</a>
             </td>
         </tr>
 }

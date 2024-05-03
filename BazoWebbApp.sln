@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BazoWebbApp", "BazoWebbApp\BazoWebbApp.csproj", "{3F67A4D3-B656-4126-97EA-44CCA9E94047}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazoWebbRazor_Temp", "BazoWebbRazor_Temp\BazoWebbRazor_Temp.csproj", "{340F28F8-FA7D-4AF4-B0FF-F13BDB13B3B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BazoWebbRazor_Temp", "BazoWebbRazor_Temp\BazoWebbRazor_Temp.csproj", "{340F28F8-FA7D-4AF4-B0FF-F13BDB13B3B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
